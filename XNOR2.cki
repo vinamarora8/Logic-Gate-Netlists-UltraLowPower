@@ -1,0 +1,10 @@
+*A low power 2 input XNOR gate subcircuit*
+
+.SUBCKT XNOR2 inA inB out Vdd
+.include XOR2.cki
+.include NOT.cki
+
+xXOR inA inB 1 Vdd XOR2
+xNOT 1 out Vdd NOT
+
+.ENDS XNOR2

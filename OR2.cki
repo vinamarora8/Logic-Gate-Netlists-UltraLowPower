@@ -1,0 +1,10 @@
+*A low power 2 input OR Gate Subcircuit*
+
+.SUBCKT OR2 inA inB out Vdd
+.include NOR2.cki
+.include NOT.cki
+
+xNOR inA inB 1 Vdd NOR2
+xNOT 1 out Vdd NOT
+
+.ENDS OR2

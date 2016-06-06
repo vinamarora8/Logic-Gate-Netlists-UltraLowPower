@@ -1,0 +1,11 @@
+*A circuit to test the NOR2 subcircuit*
+
+.include NOT.cki
+
+xNOT in out Vdd NOT
+Vsupply Vdd 0 DC 180mV
+
+Vin in 0 pwl(0 0 9ms 0 10ms 180mV 19ms 180mV 20ms 0V 29ms 0V 30ms 180mV 40ms 180mV)
+
+.tran 0.02ms 40ms
+.end

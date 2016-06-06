@@ -1,0 +1,11 @@
+*Low power 2 input NAND Gate Subcircuit*
+
+.SUBCKT NAND2 inA inB out Vdd
+.include ../vendor/cmosedu_models.txt
+
+m1 1 inA 0 0 N_50n
+m2 out inB 1 1 N_50n
+m3 out inA Vdd Vdd P_50n
+m4 out inB Vdd Vdd P_50n
+
+.ENDS NAND2

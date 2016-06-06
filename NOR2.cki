@@ -1,0 +1,11 @@
+*Low power 2 input NOR Gate*
+
+.SUBCKT NOR2 inA inB out Vdd
+.include ../vendor/cmosedu_models.txt
+
+m1 out inA 0 0 N_50n
+m2 out inB 0 0 N_50n
+m3 out inA 3 3 P_50n
+m4 3 inB Vdd Vdd P_50n
+
+.ENDS NOR2

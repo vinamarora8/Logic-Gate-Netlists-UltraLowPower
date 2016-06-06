@@ -1,0 +1,10 @@
+.include transmission_gate_sub.cki
+.include NOT.cki
+
+xTG inA inB inBb out Vdd TGATE
+xNOT inB inBb Vdd NOT
+Vsupply Vdd 0 DC 180mV
+VinA inA 0 pwl(0 0 9ms 0 10ms 180mV 19ms 180mV 20ms 0V 29ms 0V 30ms 180mV 40ms 180mV) 
+VinB inB 0 pwl(0 0 19ms 0 20ms 180mV 40ms 180mV)
+
+.end

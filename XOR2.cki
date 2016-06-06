@@ -1,0 +1,13 @@
+*A low power 2 input XOR Gate Subcircuit*
+
+.SUBCKT XOR2 inA inB out Vdd
+.include NAND2.cki
+.include NOT.cki
+
+xNOT1 inA A' Vdd NOT
+xNOT2 inB B' Vdd NOT
+xNAND1 A' inB 1 Vdd NAND2
+xNAND2 inA B' 2 Vdd NAND2
+xNAND3 1 2 out Vdd NAND2
+
+.ENDS XOR2

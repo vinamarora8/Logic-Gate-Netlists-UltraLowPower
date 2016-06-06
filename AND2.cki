@@ -1,0 +1,10 @@
+*A low power 2 input AND Gate Subcircuit*
+
+.SUBCKT AND2 inA inB out Vdd
+.include NAND2.cki
+.include NOT.cki
+
+xNAND inA inB 1 Vdd NAND2
+xNOT 1 out Vdd NOT
+
+.ENDS AND2
