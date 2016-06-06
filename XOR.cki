@@ -1,0 +1,15 @@
+*XOR Gate using TGATE
+
+.include transmission_gate_sub.cki
+.include NOT.cki
+
+xTG1 inA inBb inB out Vdd TGATE
+xTG2 inAb inB inBb out Vdd TGATE
+xINV1 inA inAb Vdd NOT
+xINV2 inB inBb Vdd NOT
+VinA inA 0 PULSE (180mV 0mV 0 0 0 10ms 20ms)
+VinB inB 0 PULSE (180mV 0mV 0 0 0 20ms 40ms)
+Vsource Vdd 0 DC 180mV
+
+.tran 0.1ms 40ms
+.end

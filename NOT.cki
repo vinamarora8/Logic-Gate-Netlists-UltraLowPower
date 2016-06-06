@@ -1,7 +1,7 @@
 *Low power NOT gate subcircuit*
 
 .SUBCKT NOT in out Vdd
-.include ../vendor/cmosedu_models.txt
+.include cmosedu_models.txt
 
 m1 out in 0 0 N_50n
 m2 out in Vdd Vdd P_50n

@@ -1,6 +1,6 @@
 *A transmission gate
 
-.SUBCKT TG In C Cb Out Vdd
+.SUBCKT TGATE In C Cb Out Vdd
 .include cmosedu_models.txt
 
 M1 In C Out 0 N_50n
