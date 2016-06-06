@@ -1,0 +1,11 @@
+*A low power Inverter*
+
+.include cmosedu_models.txt
+
+M1 Out In 0 0 N_50n
+M2 Out In Vdd Vdd P_50n
+Vin In 0
+V_source Vdd 0
+
+.dc Vin 0mV 250mV 0.1mV V_source 150mV 250mV 20mV
+.end

@@ -1,0 +1,9 @@
+*A low power Inverter*
+
+.SUBCKT INVERTER In Out Vdd
+.include cmosedu_models.txt
+
+M1 Out In 0 0 N_50n
+M2 Out In Vdd Vdd P_50n
+
+.ENDS INVERTER
